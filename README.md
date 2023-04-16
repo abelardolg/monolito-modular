@@ -13,3 +13,6 @@
 - `make run` to start a web server listening on port 1000 (8000 in the container)
 - `make logs` to see application logs
 - `make ssh-be` to SSH into the application container
+
+docker ps -aq | xargs docker stop | xargs docker rm
+docker stop $(docker ps -aq) 
