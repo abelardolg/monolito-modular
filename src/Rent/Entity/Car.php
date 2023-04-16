@@ -11,8 +11,7 @@ class Car
         private readonly string $brand,
         private readonly string $model,
         private readonly string $color,
-    )
-    {
+    ) {
     }
 
     public function getId(): string
@@ -20,28 +19,18 @@ class Car
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getBrand(): string
     {
         return $this->brand;
     }
 
-    /**
-     * @return string
-     */
     public function getModel(): string
     {
         return $this->model;
     }
 
-    /**
-     * @return string
-     */
     public function getColor(): string
     {
         return $this->color;
     }
-
 }

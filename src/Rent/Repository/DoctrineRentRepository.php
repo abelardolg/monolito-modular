@@ -13,6 +13,7 @@ class DoctrineRentRepository implements RentRepository
 {
     private readonly ServiceEntityRepository $repository;
     private readonly ObjectManager $manager;
+
     public function __construct(ManagerRegistry $managerRegistry)
     {
         $this->repository = new ServiceEntityRepository($managerRegistry, Rent::class);

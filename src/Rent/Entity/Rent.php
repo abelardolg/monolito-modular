@@ -13,15 +13,13 @@ class Rent
         private readonly Car $car,
         private \DateTime $startDate,
         private \DateTime $endDate,
-    )
-    {
+    ) {
     }
 
     public function getId(): string
     {
         return $this->id;
     }
-
 
     public function getStartDate(): \DateTime
     {

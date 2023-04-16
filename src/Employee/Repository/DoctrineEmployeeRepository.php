@@ -13,6 +13,7 @@ class DoctrineEmployeeRepository implements EmployeeRepository
 {
     private readonly ServiceEntityRepository $repository;
     private readonly ObjectManager $manager;
+
     public function __construct(ManagerRegistry $managerRegistry)
     {
         $this->repository = new ServiceEntityRepository($managerRegistry, Employee::class);
