@@ -1,0 +1,7 @@
+module_a:
+  resource: 'routes/module_a.yaml'
+  prefix: 'a'
+
+module_b:
+  resource: 'routes/module_b.yaml'
+  prefix: 'b'
